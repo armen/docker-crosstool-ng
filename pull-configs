@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd "$(dirname "$0")"/in
+
+docker cp CT-NG:/etc/crosstool-ng/crosstool-ng.conf . &&\
+	mv .config crosstool-ng.conf
